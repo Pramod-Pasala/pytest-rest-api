@@ -1,0 +1,23 @@
+[project]
+name = "pytest-rest-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Pramod-Pasala", email = "pramodpasala2002@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pytest>=9.2.0",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+pytest-rest-api = "pytest_rest_api.main:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
